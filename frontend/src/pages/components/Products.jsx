@@ -1,0 +1,67 @@
+import React from 'react'
+import "./products.css"
+import Product from './Product'
+import { AllProducts } from '../../data'
+import { NikeProducts } from '../../data'
+import axios from 'axios'
+import { useEffect } from 'react'
+import { useState } from 'react'
+import { useLocation } from 'react-router-dom'
+import { useSelector } from 'react-redux'
+
+
+
+
+const Products = () => {
+
+
+   const catLast = useLocation().pathname.split('/');
+    let n ;
+    if(catLast.length-1 > 1 ){
+      n = catLast.length-1;
+    }else{
+      n = 0;
+    }
+    console.log(n)
+
+  const cat = useLocation().pathname.split('/')[n];
+  
+
+  const [product, setProducts] = useState([])
+  useEffect(() => {
+
+    const getApi = async () => {
+
+      try {
+        const res = await axios.get( cat ? `http://localhost:5000/api/products/?category=${cat}`
+                                             : 'http://localhost:5000/api/products'
+        );
+        console.log(res.data)
+        setProducts(res.data)
+      } catch (err) {
+        console.log(err)
+      }
+    }
+    console.log(product)
+    getApi();
+  }
+    , [cat])
+
+
+
+  return (
+    <div className='products-page'>
+      <h2 className='trending-title'>{cat ? cat : 'Products'}</h2>
+      <div className='all_products-page'>
+        {
+          product.map((items) => (
+
+            <Product items={items} />
+          ))
+        }
+      </div>
+    </div>
+  )
+}
+
+export default Products

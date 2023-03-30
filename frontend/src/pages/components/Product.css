@@ -1,0 +1,38 @@
+.product-bg{
+    min-width: 15vw;
+    min-height: 45vh;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient( black , red);
+    
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem 4rem;
+    
+}
+.product-bg:hover{
+    scale: 1.2;
+
+}
+
+.product_image-bg{
+    background-color: aliceblue;
+    width: 90%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.product_image-bg img{
+height: 14vh;
+}
+
+.addProduct{
+    background-color: rgb(32, 32, 32);
+}
+
