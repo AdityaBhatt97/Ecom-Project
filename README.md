@@ -19,6 +19,17 @@ Once You have ordered a product then your order will be visible to you with you 
 
 ![Ecommerce-Cart](https://user-images.githubusercontent.com/129366781/228868420-9513ae13-c674-4072-b9bc-60d89a586b33.png)
 
+
+# LightHouse
+
+Optimized the website with lazy loading, rate-limiting and other best practises to make the website load faster.
+
+![Ecom-LightHouse](https://github.com/AdityaBhatt97/Ecom-Project/assets/129366781/2214f3ea-043a-48b9-8a54-d126735dba68)
+
+
 # Note
 
 This is a demo project and still is in development.
+
+
+
