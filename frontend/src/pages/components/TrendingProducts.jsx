@@ -14,6 +14,7 @@ const TrendingProducts = (props) => {
         {
      AllProducts.map((items) => (
 
+
        <TrendingProduct  items={items}  />
        ))
         }

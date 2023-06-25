@@ -1,5 +1,4 @@
 import React from 'react'
-import Hero from "./Images/hero.png"
 import { Link } from 'react-router-dom'
 import './Product.css'
 
@@ -7,7 +6,7 @@ const Product = ({items}) => {
   
   return (
       <Link to={`/product/${items._id}`} style= {{textDecoration : 'none'}}>
-    <div className='product-bg'>
+    <div className='product-bg' key={items._id}>
       <div className='product_image-bg'>
         <img src={items.img} alt="" />
       </div>

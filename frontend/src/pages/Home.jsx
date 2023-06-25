@@ -14,6 +14,8 @@ import ViewOrder from './components/ViewOrder'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
+
+
 const Home = () => {
 
   const specialCart = localStorage.getItem('cart');
@@ -47,13 +49,14 @@ currentUser &&
           {
             topProducts.map((item) => (
 
-
+<Link to={`/product/${item.id}` }  style= {{textDecoration : "none" , color : "black"}}>
               <div className='top-product' key={item.id}>
                 <img src={item.img} alt="" className='top-images' />
                 <h4>{item.name}</h4>
 
 
               </div>
+          </Link>
             ))
           }
 
@@ -61,7 +64,10 @@ currentUser &&
 
       </div>
       <img src={AnotherWave} alt="" className='another-wave' />
+    
+
       <TrendingProducts title="Trending Products" />
+    
 
       <Footer />
     </div>

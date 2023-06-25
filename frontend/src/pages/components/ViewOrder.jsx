@@ -1,5 +1,4 @@
 import React from 'react'
-import Order from './Order'
 import { useSelector } from 'react-redux'
 import './viewOrder.css'
 import { Link } from 'react-router-dom'
@@ -7,8 +6,9 @@ import { Link } from 'react-router-dom'
 const ViewOrder = () => {
     
     let currentUser = useSelector(state => state.user?.currentUser);
-    console.log(currentUser)
 
+    
+  
 
   return (
     <div className='view-order'>
@@ -17,7 +17,7 @@ const ViewOrder = () => {
         VIEW YOUR ORDERS! 
       </h2>
       
-      <Link to = {`/order/${currentUser.accessToken}`}>
+      <Link to = {`/order/${currentUser._id}`}>
       <button>
 
         Your Orders

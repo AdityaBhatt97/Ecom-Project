@@ -13,21 +13,22 @@ const hero = {
     
 }
 
+// id: 1,
 export const topProducts = [
-    {      
-        id: 1,
+   {      
+       id: "635a5f3c739a867ed3e81670",
         name : "Jordans",
         img : Jordan,
         price: 2000
     },
     {
-        id: 2,
+        id: '635a5ebe739a867ed3e8166e',
         name : "Nike-Hero",
         img : Hero,
         price: 2000
     },
     {
-        id: 3,
+        id: '635a659a739a867ed3e81679',
          name : "Lebron",
         img : Lebron,
         price: 2000

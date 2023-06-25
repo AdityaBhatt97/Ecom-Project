@@ -52,7 +52,7 @@ const Cart = () => {
         }
         )
 
-        console.log(res.data)
+        
         history(`/success/${res.data.id}`)
         
          }catch(err){
@@ -70,12 +70,7 @@ const Cart = () => {
 
   }
 
-    console.log(stripeToken)
-
- 
-
-    console.log(cart)
-    console.log(user)
+   
 
     
 
@@ -139,7 +134,7 @@ const Cart = () => {
 
                         <h2>Shipping Charge: Rs.150</h2>
                         <h2>Shipping Discount : Rs.-50</h2>
-                        <h2 className='total'>{`Total : Rs.${ cart.total + 100 }`}</h2>
+                        <h2 className='total'>{`Total : Rs.${cart.total > 100 ? cart.total + 100 : 0}`}</h2>
 
                     </div>
                     <div className='cart-buttons '>

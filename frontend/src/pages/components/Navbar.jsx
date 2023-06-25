@@ -2,10 +2,9 @@ import React from 'react'
 import './navbar.css'
 import Cart from './Images/cart.png'
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { logout } from '../../Redux/UserRedux'
-import { useNavigation } from 'react-router-dom'
+
 
 
  
@@ -22,8 +21,7 @@ const Navbar = () => {
   // currentUser = JSON.parse(currentUser);
 
 
-  console.log(currentUser);
-  console.log(quantity)
+
   
   const Logout = () => {
     dispatch(logout());

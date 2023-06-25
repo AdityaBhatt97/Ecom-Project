@@ -1,13 +1,11 @@
 import React from 'react'
 import "./products.css"
 import Product from './Product'
-import { AllProducts } from '../../data'
-import { NikeProducts } from '../../data'
 import axios from 'axios'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { useLocation } from 'react-router-dom'
-import { useSelector } from 'react-redux'
+
 
 
 
@@ -22,7 +20,7 @@ const Products = () => {
     }else{
       n = 0;
     }
-    console.log(n)
+    
 
   const cat = useLocation().pathname.split('/')[n];
   
@@ -36,13 +34,13 @@ const Products = () => {
         const res = await axios.get( cat ? `http://localhost:5000/api/products/?category=${cat}`
                                              : 'http://localhost:5000/api/products'
         );
-        console.log(res.data)
+        
         setProducts(res.data)
       } catch (err) {
         console.log(err)
       }
     }
-    console.log(product)
+  
     getApi();
   }
     , [cat])

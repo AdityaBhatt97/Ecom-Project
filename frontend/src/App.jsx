@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react'
 import Home from './pages/Home';
 import ProductsList from './pages/ProductsList';
 import SingleProduct from './pages/SingleProduct';
@@ -8,6 +9,8 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Success from './pages/Success';
 import Order from './pages/components/Order';
+
+
 
 function App() {
   return (
@@ -25,7 +28,10 @@ function App() {
 
         <Route path ='/cart' element={<Cart />} />
         <Route path ='/success/:stripeId' element={<Success />} />
-        <Route path ='/order/:id' element={<Order />} />
+      
+
+        <Route path ='/order/:id' element={<Order />  } />
+      
 
 
       </Routes>
