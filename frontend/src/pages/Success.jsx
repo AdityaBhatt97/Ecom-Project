@@ -7,7 +7,6 @@ import { userRequest } from '../RequestMethod'
 import { useDispatch, useSelector } from 'react-redux'
 import { emptyCart, getTotal } from '../Redux/CartRedux'
 import { useNavigate } from 'react-router-dom'
-import axios from 'axios'
 
 
 const Success = () => {
@@ -31,7 +30,6 @@ const [orderId , setOrderId] = useState(null);
 
 console.log(cart)
 console.log(user)
-// let check = stripeId && cart && user;
 
   useEffect( ()=> {
     

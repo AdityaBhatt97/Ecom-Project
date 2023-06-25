@@ -62,7 +62,7 @@ const SingleProduct = () => {
         }
         setting();
     }, [product])
-    // console.log(product.color?.[0]);
+
     console.log(size, color)
 
     const handleChange = (text) => {

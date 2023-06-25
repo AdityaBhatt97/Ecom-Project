@@ -21,7 +21,7 @@ const Register = () => {
   
   return (
     <div className='register-container'>
-     {/* <div className='black-bg'></div>  */}
+     
      <Link to={'/'}>
       <img src='https://images-platform.99static.com//cMBAi8cQkv2412QnzWlGbw3j4ME=/309x291:1064x1046/fit-in/590x590/99designs-contests-attachments/63/63533/attachment_63533816' alt="" />
       </Link>
