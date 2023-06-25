@@ -22,7 +22,7 @@ Once You have ordered a product then your order will be visible to you with you 
 
 # LightHouse
 
-Optimized the website with lazy loading, rate-limiting and other best practises to make the website load faster.
+Optimized the website with lazy loading, image-resizing ,  rate-limiting and other best practises to make the website load faster.
 
 ![Ecom-LightHouse](https://github.com/AdityaBhatt97/Ecom-Project/assets/129366781/2214f3ea-043a-48b9-8a54-d126735dba68)
 
