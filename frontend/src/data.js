@@ -6,6 +6,7 @@ import AirMax from "./pages/components/Images/airmax.png"
 import Davis from "./pages/components/Images/davis.png"
 import Joggers from "./pages/components/Images/Joggers.png"
 import AirMax90 from "./pages/components/Images/airmax90gs.png"
+import Product from "./pages/components/Product"
 
 const hero = {
 
